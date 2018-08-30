@@ -12,10 +12,21 @@
       </a>
       <nav class="main-nav">
         <ul class="user-navigation">
-          <li>Поиск по сайту</li>
-          <li class="login-link">Войти</li>
-          <li>Сравнить</li>
-          <li>Корзина</li>
+          <li class="search">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="search visually-hidden">Поиск по сайту</label>
+              <input type="search" name="search" value="" placeholder="Поиск по сайту" >
+            </form>
+          </li>
+          <li class="login">
+            <a class="login-link" href="login.html">Войти</a>
+          </li>
+          <li class="compare">
+            <a class="compare-link" href="compare.html">Сравнить</a>
+          </li>
+          <li class="card">
+            <a class="card-link" href="card.html">Корзина</a>
+          </li>
         </ul>
         
         <ul class="site-navigation">
@@ -49,7 +60,7 @@
 
       <section class="filters">
         <h2 class="filters__title">Фильтр:</h2>
-        <form class="filters__form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
 
           <fieldset class="price">
             <label for="filter-range-title">Стоимость в сутки (Р)</label>
@@ -93,7 +104,19 @@
 
               </ul>
           </fieldset>
-
+          <fieldset class="bluetooth">
+            <legend class="bluetooth__title">Bluetooth</legend>
+            <ul class="bluetooth__list">
+              <li class="bluetooth__item item-radio">
+                <input class="item-radio__control visually-hidden" type="radio" name="bluetooth-group" value="yes-bluetooth" id="yes-bluetooth" checked >
+                <label for="item-radio__label">Есть</label>
+              </li>
+              <li class="bluetooth__item item-radio">
+                <input class="item-radio__control visually-hidden" type="radio" name="bluetooth-group" value="no-bluetooth" id="no-bluetooth">
+                <label for="item-radio__label">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
           <button class="button" type="submit">Показать</button>
 
 
@@ -143,15 +166,16 @@
             </a>
           </li>
         </ul>
-        <div class="pagination"></div>
-          <span>Назад</span>
+        <div class="pagination">
+          <button class="pagination__button button-back" type="button">Назад</button>
           <ul class="pagination__list">
             <li class="pagination__item pagination__item-current"><a>1</a></li>
             <li class="pagination__item"><a href="#">2</a></li>
             <li class="pagination__item"><a href="#">3</a></li>
-          <span>Вперед</span>  
           </ul>
-        </section>
+          <button class="pagination__button button-next" type="button">Вперед</button>  
+        </div>  
+      </section>
     </main>
 
 
@@ -180,10 +204,15 @@
         </div>
         <div class="page-footer__item">
           <ul class="user-navigation">
-            <li>Поиск по сайту</li>
-            <li class="login-link">Войти</li>
-            <li>Сравнить</li>
-            <li>Корзина</li>
+            <li class="login">
+              <a class="login-link" href="login.html">Войти</a>
+            </li>
+            <li class="compare">
+              <a class="compare-link" href="compare.html">Сравнить</a>
+            </li>
+            <li class="card">
+              <a class="card-link" href="card.html">Корзина</a>
+            </li>
           </ul>
           <p>Тел: +7 (495) 495-95-95</p>  
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
