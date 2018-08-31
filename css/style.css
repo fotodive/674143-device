@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Gilroy ExtraBold"),
+    url(../fonts/gilroyextrabold.woff) format("woff"),
+    url(../fonts/gilroyextrabold.woff2) format("woff2")
+}
+@font-face {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Gilroy Light"),
+    url(../fonts/gilroylight.woff) format("woff"),
+    url(../fonts/gilroylight.woff2) format("woff2")
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans"),
+    url(../fonts/opensans.woff) format("woff"),
+    url(../fonts/opensans.woff2) format("woff2")
+}
+@font-face {
+  font-family:"Open Sans Light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Light"),
+    url(../fonts/opensanslight.woff) format("woff"),
+    url(../fonts/opensanslight.woff2) format("woff2")
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  display: none;
+}
+.logo {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.main-nav {
+  background-color: #f7e296;
+}
+.site-navigation {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.catalog__list {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+.site-navigation,
+.user-navigation,
+.exclusive__list,
+.logotype__list,
+.catalog__list,
+.transport-companies,
+.social__list {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a,
+.popular__item a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.popular__item a:hover,
+.popular__item a:focus,
+.logo:hover,
+.logo:focus {
+  opacity: 0.6;
+}
+.site-navigation a:active,
+.user-navigation a:active,
+.popular__item a:active,
+.logo:active {
+  opacity: 0.3;
+}
+.search-input {
+  border: none;
+  background-color: #f7e296;
+  width: 355px;
+  height: 49px;
+  opacity: 0.3;
+  outline: none;
+  padding: 0;
+}
+.search-input:hover {
+  opacity: 0.6;
+  border: none;
+}
+.search-input:focus,
+.search-input:active {
+  background-color: #f7e296;
+  opacity: 1;
+  border: none;
+  border-bottom: 2px solid #000000;
+  list-style: none;
+}
+.search-button {
+  opacity: 0;
+  width: 85px;
+  height: 49px;
+  border: 2px solid #000000;
+  color: #000000;
+  background-color: #f7e296;
+  padding: 0;
+}
+.search-input:focus + .search-button,
+.search-input:active + .search-button  {
+  opacity: 1;
+}
+.search-button:hover {
+  border: 2px solid #000000;
+  color: #ffffff;
+  background-color: #000000;
+}
+.search-button:active {
+  border: 2px solid #000000;
+  color: #ffffff;
+  opacity: 0.3;
+  background-color: #000000;
+}
+
+.exclusive__title {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+}
+.exclusive__item {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.exclusive__item--slider-1 {
+  background-image: url("../img/slider-1.png");
+}
+.exclusive__item--slider-2 {
+  background-image: url("../img/slider-2.png");
+}
+.exclusive__item--slider-3 {
+  background-image: url("../img/slider-3.png");
+}
+
+
+
+.button {
+  position: relative;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+ }
+.button::before {
+  content: "";
+  top: 50%;
+  left: center;
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  z-index: -1;
+
+}
+.button:hover::before,
+.button:focus::before {
+  height: 40px;
+
+}
+
+.button:active {
+opacity: 0.3;
+}
+.button:hoveractive::before {
+  height: 40px;
+}
+.stats__table th {
+  font-family: "Gilroy Light", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+.stats__table td {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.popular__list {
+  list-style: none;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.popular__item {
+  position: relative;
+  background-color: #f7e296;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+
+}
+.popular-1 {
+  background-image: url("../img/popular-1.svg");
+}
+.popular-2 {
+  background-image: url("../img/popular-2.svg");
+}
+.popular-3 {
+  background-image: url("../img/popular-3.svg");
+}
+.popular-4 {
+  background-image: url("../img/popular-4.svg");
+}
+.popular-5 {
+  background-image: url("../img/popular-5.svg");
+}
+.popular-6 {
+  background-image: url("../img/popular-6.svg");
+}
+.popular__item:hover,
+.popular__item:focus {
+  background-color: #f0c52e;
+}
+.popular__item:active {
+  background-color: #f0c52e;
+  opacity: 0.3;
+}
+.popular__item a {
+  position: absolute;
+  top: 180px;
+}
+.services__title,
+.info__title,
+.contacts__title {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.logotype__item {
+  opacity: 0.2;
+  filter: grayscale(1);
+}
+.logotype__item:hover,
+.logotype__item:focus {
+  opacity: 1;
+  filter: grayscale(0);
+}
+.transport-companies {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+
+.page-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+.page-footer a {
+  color: #ffffff;
+}
+.page-footer .logo {
+  color: #ffc600
+}
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.social__link:hover,
+.social__link:focus {
+  opacity: 0.6;
+}
+.social__link:active {
+  opacity: 0.1;
+}
+.link-tw {
+  background-image: url("../img/twitter.svg");
+}
+.link-fb {
+  background-image: url("../img/fb.svg");
+}
+.link-in {
+  background-image: url("../img/instagram.svg");
+}
+.htmlacademy {
+  display: block;
+  width: 27px;
+  height: 35px;
+  background-image: url("../img/logo-html.svg");
+}
+.modal-write-us label {
+  font-family: "Gilroy Light", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
