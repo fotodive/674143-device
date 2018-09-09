@@ -14,7 +14,7 @@
         <ul class="user-navigation">
           <li class="search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search-input"type="search" name="search" placeholder="Поиск по сайту">
+              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
               <input class="search-button" type="submit" value="Найти">
             </form>
           </li>
@@ -53,18 +53,18 @@
 
       <section class="exclusive container">
         <h2 class="visually-hidden">Эксклюзивные товары</h2>
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+        <input class="exclusive__slider-btn-1" type="radio" id="exclusive__btn-1" name="exclusive__toggle" checked>
+        <input class="exclusive__slider-btn-2" type="radio" id="exclusive__btn-2" name="exclusive__toggle">
+        <input class="exclusive__slider-btn-3" type="radio" id="exclusive__btn-3" name="exclusive__toggle">
+          <div class="exclusive__slider-controls">
+            <label class="exclusive__label-1" for="exclusive__btn-1"></label>
+            <label class="exclusive__label-2" for="exclusive__btn-2"></label>
+            <label class="exclusive__label-3" for="exclusive__btn-3"></label>
           </div>
         <div class="exclusive__wrapper slider">
           <ul class="exclusive__list slider__list">
             <li class="exclusive__item exclusive__item--slider-1 slider__item">
-                <img class="exclusive__image" src="img/slider-1.png" width="384" height="486">
+                <img class="exclusive__image" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
                 <h3 class="exclusive__title">Делай селфи,<br>как Бен Стиллер!</h3>
                 <p class="exclusive__description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="button" href="product-item.html">Подробнее</a>
@@ -82,8 +82,8 @@
                   </table>
             </li>
             <li class="exclusive__item exclusive__item--slider-2 slider__item">
-                <img class="exclusive__image" src="img/slider-2.png" width="345" height="485">
-                <h3 class="exclusive__title">Худеем правильно!</h3>
+                <img class="exclusive__image" src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+                <h3 class="exclusive__title">Худеем<br>правильно!</h3>
                 <p class="exclusive__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать/</p>
                     <a class="button" href="product-item.html">Подробнее</a>
                     <table class="stats__table">
@@ -96,8 +96,8 @@
                       </table>
             </li>
             <li class="exclusive__item exclusive__item--slider-3 slider__item">
-                <img class="exclusive__image" src="img/slider-3.png" width="526" height="334">
-                <h3 class="exclusive__title">Порхает как бабочка, жалит как пчела!</h3>
+                <img class="exclusive__image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер, оснащенный мощным лазером">
+                <h3 class="exclusive__title">Порхает как бабочка,<br>жалит как пчела!</h3>
                 <p class="exclusive__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="button" href="product-item.html">Подробнее</a>
                 <table class="stats__table">
@@ -129,13 +129,13 @@
       <section class="services">
         <div class="wrapper">
           <h2 class="visually-hidden">Сервис</h2>
-          <input type="radio" id="button-1" name="toggle" checked>
-          <input type="radio" id="button-2" name="toggle">
-          <input type="radio" id="button-3" name="toggle">
-            <div class="slider-controls-services">
-              <label for="button-1">Доставка</label>
-              <label for="button-2">Гарантия</label>
-              <label for="button-3">Кредит</label>
+          <input class="services__slider-btn-1" type="radio" id="services__btn-1" name="toggle" checked>
+          <input class="services__slider-btn-2" type="radio" id="services__btn-2" name="toggle">
+          <input class="services__slider-btn-3" type="radio" id="services__btn-3" name="toggle">
+            <div class="services__slider-controls">
+              <label class="button" for="services__btn-1">Доставка</label>
+              <label class="button" for="services__btn-2">Гарантия</label>
+              <label class="button" for="services__btn-3">Кредит</label>
             </div>
 
           <div class="slides">
@@ -209,9 +209,9 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__item-left">
-          <a class="page-footer__logo logo">Device</a>
+          <a class="logo">Device</a>
           <p>г.Москва, ул.Строителей, 15</p>
-          <span></span>
+
         </div>
         <div class="page-footer__item-center">
           <ul class="site-navigation">
